@@ -1,0 +1,26 @@
+{
+  "name": "voting-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset": "^1.1.7",
+    "chai": "^5.1.1",
+    "chai-immutable": "^2.1.0",
+    "mocha": "^10.7.3"
+  },
+  "babel": {
+    "presets": [
+      "es2024"
+    ]
+  },
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register --recursive --require ./test/test_helper.js",
+    "test:watch": "npm run test -- --watch"
+  }
+}
